@@ -28,3 +28,5 @@ jobs:
         working-directory: ./nmain
         run : npm test
       
+      - name: Start containers(Deploy)
+        run: docker-compose -f "docker-compose.yml" up -d --build
